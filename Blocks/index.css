@@ -130,3 +130,25 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+
+form{
+  margin-bottom: 500px;
+}
+.form {
+display: flex;
+flex-direction: column;
+width: 400px;
+}
+
+.form__input:valid {
+border: 1px solid green;
+}
+
+.form__input:invalid {
+border: 1px solid red;
+}
+
+select{
+  margin-top: 20px;
+}

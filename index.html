@@ -34,9 +34,63 @@
     </header>
     <main>
         <section id="formulario" class="formulario">
-<button>
-    CLick Me
-</button>
+            <form id="form_data" method="get" class="form">
+                <fieldset class="form">
+                    <legend>Información personal</legend>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" class="form__input" required placeholder="Nombre" />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" class="form__input" required placeholder="ejemplo@gmail.com" />
+
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" class="form__input" required placeholder="Contraseña" />
+                </fieldset>
+                <br />
+                <fieldset class="form">
+                    <legend>Información Adicional</legend>
+                    <label for="name">Foto de perfil:</label>
+                    <input type="file" id="name" />
+
+                    <label>Fecha de Nacimiento</label>
+                    <input type="date" />
+
+                    <label>Elige tu color favorito:</label>
+                    <input type="color" />
+
+                    <label>Biografia</label>
+                    <textarea rows="5" cols="5"
+                        placeholder="It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."></textarea>
+                </fieldset>
+                <br />
+                <fieldset>
+                    <legend>Preferencias</legend>
+                    <label>
+                        <input type="checkbox" name="newsletter" value="1" />
+                        Deseo recibir el newsletter
+                    </label>
+                    <div>
+                        <label>Masculino</label>
+                        <input type="radio" name="gender" value="123uiu" />
+
+                        <label>Femenino</label>
+                        <input type="radio" name="gender" />
+                    </div>
+
+                    <select>
+                        <option value="" disabled selected>Seleciona tu fruta favorita</option>
+                        <option value="1">Manzana</option>
+                        <option value="2">Platano</option>
+                        <option value="3">Naranja</option>
+                    </select>
+                    
+                </fieldset>
+
+                <br />
+                <input type="submit" />
+                <br />
+                <input type="reset" />
+            </form>
         </section>
     </main>
     <footer id="footer" class="footer">
